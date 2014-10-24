@@ -1,5 +1,5 @@
 Dependencies for Project 'projet_bato', Target 'Simulation': (DO NOT MODIFY !)
-F (.\src/main.c)(0x543B807B)(-c -mcpu=cortex-m3 -mthumb -gdwarf-2 -MD -Wall -O -mapcs-frame -mthumb-interwork -I../../pilotes/clock -I./src -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD -o ./release/main.o)
+F (.\src/main.c)(0x544A032C)(-c -mcpu=cortex-m3 -mthumb -gdwarf-2 -MD -Wall -O -mapcs-frame -mthumb-interwork -I../../pilotes/clock -I./src -IC:/Keil/ARM/CMSIS/Include -IC:/Keil/ARM/Inc/ST/STM32F10x -DSTM32F10X_MD -o ./release/main.o)
 I (C:\KEIL\ARM\INC\ST\STM32F10X\STM32F10X.H)(0x5087AE18)
 I (C:\KEIL\ARM\CMSIS\INCLUDE\CORE_CM3.H)(0x5087AFDE)
 I (C:\KEIL\ARM\CMSIS\INCLUDE\CORE_CMINSTR.H)(0x5087AFDE)
