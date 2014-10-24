@@ -1,4 +1,5 @@
-release/main.o: src/main.c \
+release/stm32f10x_tim.o: src/stm32f10x_tim.c \
+  C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_tim.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/CMSIS/core_cm3.h \
   c:\program\ files\ (x86)\codesourcery\sourcery\ g++\ lite\bin\../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/include/stdint.h \
@@ -7,7 +8,6 @@ release/main.o: src/main.c \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/system_stm32f10x.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_conf.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_adc.h \
-  C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_bkp.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_can.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_cec.h \
@@ -29,4 +29,5 @@ release/main.o: src/main.c \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_tim.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_usart.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_wwdg.h \
-  C:/Keil/stm32lib/stm32f10x/peripherals/inc/misc.h
+  C:/Keil/stm32lib/stm32f10x/peripherals/inc/misc.h \
+  C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_rcc.h
