@@ -1,5 +1,4 @@
-release/stm32f10x_rcc.o:  \
- C:/Keil/stm32lib/stm32f10x/peripherals/src/stm32f10x_rcc.c \
+release/stm32f10x_rcc.o: src/stm32f10x_rcc.c \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_rcc.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/CMSIS/core_cm3.h \
