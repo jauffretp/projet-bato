@@ -1,4 +1,4 @@
 
 void accelero_init(void);
 
-int accelero_getAngle(void);
+double accelero_getAngle(void);
