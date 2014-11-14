@@ -162,11 +162,11 @@
             <UseExternalTool>0</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>0</UpdateFlashBeforeDebugging>
-            <Capability>0</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <Capability>1</Capability>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
-          <Flash2></Flash2>
-          <Flash3></Flash3>
+          <Flash2>BIN\UL2CM3.DLL</Flash2>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
         </Utilities>
         <TargetArm>
@@ -259,14 +259,14 @@
             <interw>1</interw>
             <bigend>0</bigend>
             <Strict>0</Strict>
-            <Optim>0</Optim>
+            <Optim>1</Optim>
             <wLevel>2</wLevel>
             <uThumb>1</uThumb>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\pilotes\clock;.\src</IncludePath>
+              <IncludePath>..\..\pilotes\clock;.\src;.\inc;C:\Keil\stm32lib\stm32f10x\peripherals\inc;C:\Keil\stm32lib\stm32f10x\peripherals\src;.\test</IncludePath>
             </VariousControls>
           </Carm>
           <Aarm>
@@ -306,6 +306,31 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src/main.c</FilePath>
+            </File>
+            <File>
+              <FileName>accelero.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src/accelero.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src/stm32f10x_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src/stm32f10x_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src/stm32f10x_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>C:/Keil/stm32lib/stm32f10x/peripherals/src/stm32f10x_rcc.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -574,14 +599,14 @@
             <interw>1</interw>
             <bigend>0</bigend>
             <Strict>0</Strict>
-            <Optim>0</Optim>
+            <Optim>1</Optim>
             <wLevel>2</wLevel>
             <uThumb>1</uThumb>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\pilotes\clock;.\src</IncludePath>
+              <IncludePath>..\..\pilotes\clock;.\src;.\inc;C:\Keil\stm32lib\stm32f10x\peripherals\inc</IncludePath>
             </VariousControls>
           </Carm>
           <Aarm>
@@ -621,6 +646,31 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src/main.c</FilePath>
+            </File>
+            <File>
+              <FileName>accelero.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src/accelero.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src/stm32f10x_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src/stm32f10x_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src/stm32f10x_tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>C:/Keil/stm32lib/stm32f10x/peripherals/src/stm32f10x_rcc.c</FilePath>
             </File>
           </Files>
         </Group>

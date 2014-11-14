@@ -1,7 +1,6 @@
 
 #include "accelero.h"
-#include "stm32f10x_gpio.h"
-
+#include "stm32f10x_adc.h"
 
 GPIO_InitTypeDef GPIO_InitStructure;
 ADC_InitTypeDef  ADC_InitStructure;

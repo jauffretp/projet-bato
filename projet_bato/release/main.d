@@ -29,4 +29,4 @@ release/main.o: src/main.c \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_tim.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_usart.h \
   C:/Keil/stm32lib/stm32f10x/peripherals/inc/stm32f10x_wwdg.h \
-  C:/Keil/stm32lib/stm32f10x/peripherals/inc/misc.h
+  C:/Keil/stm32lib/stm32f10x/peripherals/inc/misc.h inc/accelero.h
