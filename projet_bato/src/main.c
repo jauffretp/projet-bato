@@ -1,5 +1,6 @@
 //____ registres de périphériques du stm_32
 #include "accelero.h"
+#include "girouette.h"
 
 /*
  * En mode simul : changer la tension ADC2 voie 10 et 
