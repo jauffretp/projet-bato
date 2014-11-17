@@ -1,15 +1,16 @@
-//____ registres de périphériques du stm_32
-#include "accelero.h"
-#include "girouette.h"
-#include "interrupt.h"
+#include "gestion_bato.h"
 
 void test_accelero(void); 
+void test_interrupt(void);
+void test_girouette(void);
 
 int main (void)
 { 
 	//test_accelero();
-	interrupt_init();
-	interrupt_run();
+	//test_interrupt();
+	test_girouette();
+	//bato_init();
+	//bato_gestionVoile();
 	return 0;
 }
 
