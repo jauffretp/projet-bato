@@ -12,9 +12,11 @@ const uint8_t ADC_Channel_X = ADC_Channel_10;
 const uint8_t ADC_Channel_Y = ADC_Channel_11;
 
 /* These values are deduced from experimental captures of X and Y*/
-const uint16_t OFFSET_X = 19000;
+const uint16_t OFFSET_X = 27000;
 const uint16_t OFFSET_Y = 37000;
-const uint16_t RADIUS = 8600;
+const uint16_t EXCEED_45DEG_X = 4000;
+const uint16_t EXCEED_45DEG_Y = 500;
+
 /* Valeurs expérimentaux de X et Y pour les points critiques :
 	-90 degree : 19000 29000 -> 0   1
   -45 degree : 24000 35800 -> 0.7 0.7
@@ -73,10 +75,10 @@ int accelero_getValY(void) {
 	return launchCapture(ADC_Channel_Y);
 }
 
-/* TODO : formule à refaire.. */
-double x; double y;
-double accelero_getAngle() {
-	x = (double) (RADIUS - (accelero_getValX() - OFFSET_X));
-	y = (double) (RADIUS - (accelero_getValY() - OFFSET_Y));
-	return 180*atanf(tan(fabs(y)/fabs(x)));
+int accelero_exceed45Deg() {
+	int x = accelero_getValX();
+	int y = accelero_getValY();
+	int exceed_x = x - OFFSET_X < -EXCEED_45DEG_X ||x - OFFSET_X > EXCEED_45DEG_X;
+	int exceed_y = y - OFFSET_Y < EXCEED_45DEG_Y;
+	return exceed_x && exceed_y;
 }

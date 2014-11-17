@@ -3,7 +3,7 @@
 
 int capteur_adc_X;
 int capteur_adc_Y;
-double angle;
+int depasser_45Deg;
 int accelero_getValX(void);
 int accelero_getValY(void);
 
@@ -21,6 +21,6 @@ void test_accelero() {
 		while(i--);
 		capteur_adc_X = accelero_getValX();
 		capteur_adc_Y = accelero_getValY();
-		angle = accelero_getAngle();
+		depasser_45Deg = accelero_exceed45Deg();
 	}
 }
