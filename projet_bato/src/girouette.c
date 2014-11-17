@@ -14,7 +14,12 @@ RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3 , ENABLE) ;
 TIM_EncoderInterfaceConfig(TIM3, TIM_EncoderMode_TI12,TIM_ICPolarity_BothEdge , TIM_ICPolarity_BothEdge);
 TIM_SetAutoreload(TIM3,1440);
 TIM_Cmd(TIM3, ENABLE);
-	
+
+//première initialisation en scrutation
+while(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_5) == 0){}
+TIM_SetCounter(TIM3,0);
+
+//activation de l'interruption
 GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource5);
 
 	
@@ -34,8 +39,7 @@ EXTI_Init(&configExt);
 
 
 	
-while(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_5) == 0){}
-TIM_SetCounter(TIM3,0);
+
 	
 }
 
@@ -50,4 +54,5 @@ int getAngleGirouette() {
 
 void EXTI9_5_IRQHandler(void){
 	TIM_SetCounter(TIM3,0);
+	EXTI_ClearITPendingBit(EXTI_Line5);
 }
