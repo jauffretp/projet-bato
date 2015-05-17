@@ -1,0 +1,1 @@
+Dans le cadre du cours Périphérique 4ème Informatique à l'INSA de Toulouse, il faut réaliser une application de contrôle d'une maquette de bateau à voile
